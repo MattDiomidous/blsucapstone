@@ -1,19 +1,14 @@
-const express = require('express')
+const express = require('express');
+const app = express();
 
-const app = express()
+const port = 3000;
 
-app.get('/', (req, res)  => {
-    res.send('Hello from get req.')
-})
+app.get('/', (req, res) => {
+  res.send('Hello, World!');
+});
 
-app.get('/', (req, res)  => {
-    res.send('Hello from get req.')
-})
+app.listen(port, () => {
+  console.log(`Server is running at http://localhost:${port}`);
+});
 
-app.post('/', (req, res)  => {
-    res.send('Hello from post req.')
-})
 
-app.get(3000, ()  => {
-    console.log('Server on port 3000')
-})

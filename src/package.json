@@ -4,7 +4,7 @@
   "description": "The project is a web application for the BCA BLSU, facilitating connections, resource sharing,",
   "main": "scheduling.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/app.js"
   },
   "keywords": [],
   "author": "",
